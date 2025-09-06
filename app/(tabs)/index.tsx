@@ -1,6 +1,8 @@
-import { Text, View } from "react-native";
+import useTheme from "@/hooks/useTheme";
+import { Text, TouchableOpacity, View } from "react-native";
 
 export default function Index() {
+  const { toggleDarkMode } = useTheme();
   return (
     <View
       style={{
@@ -10,6 +12,9 @@ export default function Index() {
       }}
     >
       <Text>editsd tiscreen.</Text>
+      <TouchableOpacity onPress={toggleDarkMode}>
+        <Text>Toggle Mode</Text>
+      </TouchableOpacity>
     </View>
   );
 }
