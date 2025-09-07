@@ -234,6 +234,5 @@ export const createHomeStyles = (colors: ColorScheme) => {
       color: colors.textMuted,
     },
   });
-
   return styles;
 };
